@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mypage</title>
+<style>
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .navitem {
+        font-size:20px;
+	    height: 100%;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+	    justify-content: space-between;
+    }
+
+    ul {
+	    list-style: none;
+	    width:100%;
+	    height: 100%;
+	    display: flex;
+	    align-items: center;
+        justify-content: space-between;
+
+    }
+
+    header {
+	    width:100%;
+	    height:80px;
+	    display: flex;
+	    align-items: center;
+	    margin:0 auto;
+    }
+
+    #righthead {
+        margin-right: 50px;
+
+    }
+
+    #search {
+        width: 200px;
+        height: 30px;
+
+    }
+    .mpcontainer {
+        margin: 30px 220px;
+        align-items: center;
+
+    }
+
+    .mptitle {
+        border-bottom: 5px double green;
+    }
+
+    .mpinner {
+        width : 100%
+        margin: 0 auto;
+    }
+
+    #minfotable {
+        border : 1px solid black;
+        margin: 25px auto;
+        width : 700px;
+        height: 300px;
+        text-align: center;
+    }
+
+    #del{
+        border : 1px solid red;
+        margin-right: 275px;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        position: relative;
+
+    }
+
+    .infotable {
+        border : 1px solid black;
+        margin: 25px auto;
+        width : 900px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .Delete {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <a href=".">
+            <h2>
+                mainhome
+            </h2>
+        </a>
+        <nav>
+        <ul>
+            <li class="navitem"><a href=".">커뮤니티</a></li>
+            <li class="navitem"><a href=".">캠핑예약</a></li>
+        </ul>
+        <ul>
+            <li class="navitem"><form action="." method="get">
+                <input type="text" id="search">
+                <input type="submit" value="검색">
+            </form></li>
+        </ul>
+        <ul id="righthead">
+            <li class="navitem"><a href=".">로그인</a></li>
+            <li class="navitem"><a href=".">마이페이지</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+</div>
+
+<div class="mpcontainer">
+    <div class="mptitle">
+        <h2>회원정보</h2>
+    </div>
+    <div class="mpinner">
+        <table id="minfotable" border="1">
+            <tr>
+                <td style="width:200px">아이디</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>회원분류</td>
+                <td>-</td>
+            </tr>
+        </table>
+
+        <a href="."><div id="del">회원탈퇴</div></a>
+    </div>
+
+</div>
+
+<div class="mpcontainer">
+    <div class="mptitle">
+        <h2>예약내역</h2>
+    </div>
+    <div class="mpinner">
+        <table class="infotable" border="1">
+            <th>
+                예약일시
+            </th>
+            <th>
+                예약장소
+            </th>
+            <th>
+                숙박기간
+            </th>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="Delete"><button>삭제</button></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="Delete"><button>삭제</button></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="Delete"><button>삭제</button></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="Delete"><button>삭제</button></td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+</div>
+
+<div class="mpcontainer">
+    <div class="mptitle">
+        <h2>리뷰내역</h2>
+    </div>
+    <div class="mpinner">
+        <table class="infotable" border="1">
+            <th>
+                제목
+            </th>
+            <th>
+                작성일시
+            </th>
+
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td class="Delete"><button>삭제</button></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td class="Delete"><button>삭제</button></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td class="Delete"><button>삭제</button></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td class="Delete"><button>삭제</button></td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
